@@ -10,8 +10,9 @@ var computerGuess = letters[Math.floor(Math.random() * letters.length)];
 
 
 function startGame() {
-    var numberOfGuessLeft = 9;
-    var yourGuess = [];
+    numberOfGuessLeft = 9;
+    yourGuess = [];
+    computerGuess = letters[Math.floor(Math.random() * letters.length)];
     // document.querySelector("#win").innerHTML = win;
     // document.querySelector("#lose").innerHTML = lose;
     document.querySelector("#guess-left").innerHTML = numberOfGuessLeft;
